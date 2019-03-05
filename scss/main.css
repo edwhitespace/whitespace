@@ -568,9 +568,7 @@ input.search {
 
 header {
   background: #FFFFFF;
-  position: fixed;
   width: 100%;
-  z-index: 9999999;
   max-width: 1800px; }
   header ul li {
     list-style: none;
@@ -1939,7 +1937,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     font-weight: 400; }
   @media (max-width: 959px) {
     .page-header-left {
-      padding: 80px 20px 50px 20px; } }
+      padding: 80px 0px 50px 0px; } }
 
 .curve .curve-top {
   background: url(../assets/images/whitespace-curve-top.png) no-repeat center;
