@@ -1,0 +1,245 @@
+// Forms
+
+.form-section {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+
+
+	@include respond-below(xs) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.form-container {
+		background: $white;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		max-width: 920px;
+		margin: 0 auto;
+		box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+		position: relative;
+
+		.tabbertabhide {
+			display:none;
+		}
+
+		ul.tabbernav {
+				margin:0;
+
+			li {
+				list-style: none;
+				margin: 0;
+				display: inline-block;
+				width: 50%;
+				white-space: nowrap;
+				text-align: center;
+				color: $dark-grey;
+				box-shadow: inset 0 -1px 0 $grey;
+
+				a{
+					color: $dark-grey;
+					display: block;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					opacity: 0.7;
+
+					&:hover{
+						text-decoration: none;
+					}
+				}
+
+				&:hover {
+					box-shadow: inset 0 -3px 0 $blue;
+					text-decoration: none;
+					
+					a{
+						opacity: 1;
+					}
+
+				}
+
+				&.tabberactive {
+					box-shadow: inset 0 -3px 0 $blue; 
+
+					a{
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+
+			form {
+				max-width: 450px;
+				margin: 0 auto;
+				margin-top: 30px;
+
+				@include respond-below(xs) {
+					width: 90%;
+					margin: 0 auto;
+				}
+
+				input[type="email"],
+				input[type="number"],
+				input[type="search"],
+				input[type="text"],
+				input[type="tel"],
+				input[type="url"],
+				input[type="password"],
+				textarea,
+				select {
+					height: 40px;
+					padding: 6px 10px;
+					background-color: #EDEDEF;
+					border: 1px solid #EDEDEF;
+					border-radius: 3px;
+					box-shadow: none;
+					box-sizing: border-box;
+					width: 100%;
+					margin-bottom: 5px;
+					font-size: $base-font-size;
+					font-family: $base-font-family;
+				}
+
+				input[type="email"],
+				input[type="number"],
+				input[type="search"],
+				input[type="text"],
+				input[type="tel"],
+				input[type="url"],
+				input[type="password"],
+				textarea {
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					appearance: none; 
+				}
+
+				textarea {
+					min-height: 65px;
+					padding-top: 6px;
+					padding-bottom: 6px; 
+				}
+
+				input[type="email"]:focus,
+				input[type="number"]:focus,
+				input[type="search"]:focus,
+				input[type="text"]:focus,
+				input[type="tel"]:focus,
+				input[type="url"]:focus,
+				input[type="password"]:focus,
+					textarea:focus,
+					select:focus {
+					background-color: #E8EFF8;
+					border: 1px solid #E8EFF8;
+					outline: 0; 
+				}
+
+				label,
+				legend {
+					display: block;
+					margin-top: 20px;
+					margin-bottom: 10px;
+				}
+
+				fieldset {
+					padding: 0;
+					border-width: 0; 
+				}
+
+				input[type="checkbox"],
+				input[type="radio"] {
+					display: inline; 
+				}
+
+				label > .label-body {
+					display: inline-block;
+					margin-left: .5rem;
+					font-weight: normal; 
+				}
+
+				button{
+					display: block;
+					clear: both;
+					margin: 0 auto;
+					margin-top: 20px;
+				}
+
+				p.guidance {
+					font-size: 13px;
+					line-height: 16px;
+					marging-top: 5px;
+					font-style: italic;
+					text-align: left;
+					padding: 0px;
+				}
+
+		}
+
+		h2 {
+			text-align: center;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		p {
+			text-align: center;
+			padding-left: 20px;
+			padding-right: 20px;
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		img {
+			position: absolute;
+			left: -13%;
+			bottom: 0;
+			width: 240px;
+
+			@include respond-below(md) {
+				left: -1%;
+				width: 220px;
+			}
+
+			@include respond-below(sm) {
+				display: none;
+			}
+
+		}
+
+		ul.tabs{
+			margin-top: 20px;
+			margin-bottom: 10px;
+
+			li {
+				display: inline-block;
+				width: 50%;
+				white-space: nowrap;
+				text-align: center;
+
+			
+			}
+		}
+	}
+}
+
+input.search{
+	height: 40px;
+	padding: 6px 10px;
+	background-color: #EDEDEF;
+	border: 1px solid #EDEDEF;
+	border-radius: 3px;
+	box-shadow: none;
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 5px;
+	font-size: $base-font-size;
+	font-family: $base-font-family;
+
+	&:focus {
+		background-color: #E8EFF8;
+		border: 1px solid #E8EFF8;
+		outline: 0; 
+	}
+}

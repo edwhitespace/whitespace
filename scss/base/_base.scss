@@ -1,0 +1,71 @@
+// Base Styles
+
+// Font weights
+
+$xlight: 200;
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Base Font
+
+$base-font-family: 'Nunito', sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 18px;
+$base-line-height: 28px;
+
+// Headings
+
+$header-font-weight: $bold;
+
+// Base Styles
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+	font-size: $base-font-size; 
+	-webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    background: $light-blue;
+}
+
+body {
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-weight: $regular;
+	font-family: $base-font-family;
+	color: $light-grey; 
+	max-width: 1800px;
+	margin: 0 auto;
+	background: $white;
+	-webkit-box-shadow: 0px 5px 10px #1c1c1c;
+    -moz-box-shadow: 0px 5px 10px #1c1c1c;
+    box-shadow: 0px 0px 40px #eaeaea;
+
+    @include respond-below(sm) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+}
+
+.page-content {
+	padding-top: 85px;
+}
+
+.container {
+	max-width: 1650px;
+	margin: auto;
+	position: relative;
+	padding: 0px 25px 0px 25px; 
+	-moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+:focus {
+    outline: 0px!important;
+}

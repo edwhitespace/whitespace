@@ -1,0 +1,334 @@
+// Homepage
+
+
+// Services Grid
+
+.services-grid {
+	overflow: hidden;
+	max-width: 1220px;
+	margin: 0 auto;
+
+	@include respond-below(md) {
+		max-width: 960px;
+	}
+
+
+	.col {
+		min-width: 570px;
+		padding: 15px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+
+		@include respond-below(md) {
+			min-width: 439px;
+			padding: 0px;
+		}
+
+		@include respond-below(sm) {
+			max-width: 100%;
+			min-width: 100%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+
+		a.service {
+			display: block;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+
+				&.discovery-day {
+					background: url(../assets/images/whitespace-discovery-day.jpg) no-repeat center;
+					background-size: cover;
+				}
+
+				.overlay {
+					background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(9,9,9,0.6));
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					right: 0;
+				}
+
+				.content {
+					position: absolute;
+					width: 100%;
+					position: absolute;
+					width: 100%;
+					left: 0;
+					right: 0;
+					padding: 30px;
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					transition: 0.5s ease;
+
+					@include respond-below(sm) {
+						bottom: 0!important;
+						padding: 20px!important;
+						max-width: 500px!important;
+					}
+
+
+					h3 {
+						color: $white;
+						margin-bottom: 15px;
+					}
+
+					p {
+						color: $white;
+						margin-bottom: 15px;
+
+						&.underline  {
+							display: inline-block;
+							border-bottom: 1px solid $white;
+						}
+
+					}
+
+				}
+
+				&:hover .content {
+					bottom: -20px;
+					transition: 0.5s ease;
+
+					@include respond-below(sm) {
+						bottom: 0!important;
+					}
+				}
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	.left {
+
+		float: left;
+
+		@include respond-below(sm) {
+			float: none;
+		}
+
+		a.service {
+			height: 680px;
+		
+			@include respond-below(sm) {
+				height: 400px;
+			}
+
+				.content {
+					bottom: -154px;
+				}
+
+				&.discovery-day {
+					background: url(../assets/images/whitespace-discovery-day.jpg) no-repeat center;
+					background-size: cover;
+				}
+
+		}
+
+	}
+
+	.right {
+	
+		float: right;
+
+		@include respond-below(sm) {
+			float: none;
+		}
+
+		a.service {
+			height: 325px;
+
+			@include respond-below(sm) {
+				height: 400px;
+			}
+
+				.content {
+					bottom: -131px;
+
+			       @include respond-below(md) {
+						bottom: -155px;
+					}
+				}
+
+				&.investready {
+					background: url(../assets/images/whitespace-investeady.jpg) no-repeat center;
+					background-size: cover;
+					margin-bottom: 30px;
+				}
+
+				&.corporate-innovation-club {
+					background: url(../assets/images/whitespace-corporate-innovation-club.jpg) no-repeat center;
+					background-size: cover;
+				}
+		}
+
+	}
+
+}
+
+// Product Slider
+
+.product-slider {
+	background: url(../assets/images/whitespace-circle.png) no-repeat right;
+	background-size: 800px 800px;
+	background-position: 129% 28%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	@include respond-below(lg) {
+		background-size: 700px 700px;
+	}
+
+	@include respond-below(md) {
+		background-size: 600px 600px;
+		background-position: 158% 28%;
+	}
+
+	@include respond-below(sm) {
+		background: none;
+		padding-top: 0px;
+	}
+
+	.container {
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		max-width: 1500px;
+		padding: 0px 35px 0px 50px;
+
+		@include respond-below(sm) {
+			flex-direction: column;
+			padding: 0px 20px 0px 20px;
+		}
+	}
+	
+	.left {
+		flex: 1 1 0;
+		
+		.content {
+			max-width: 630px;
+			padding-right: 50px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+
+			@include respond-below(sm) {
+				text-align: center;
+				margin: 0 auto;
+				padding-right: 0px;
+				max-width: 600px;
+				margin-bottom: 60px;
+			}
+
+		}
+
+		@include respond-below(sm) {
+			flex: none;
+			 width: 100%;
+		}
+	}
+
+	.right {
+		flex: 1 1 0;
+		min-width: 600px;
+		max-width: 600px;
+
+		@include respond-below(lg) {
+			min-width: 550px;
+			max-width: 550px;
+		}
+
+		@include respond-below(md) {
+			min-width: 400px;
+			max-width: 400px;
+		}
+
+		@include respond-below(sm) {
+			min-width: 480px;
+			max-width: 480px;
+		}
+
+		@include respond-below(xs) {
+			min-width: 300px;
+			max-width: 300px;
+		}
+
+	}
+
+	.slider-wrapper {
+		z-index: 500;
+		position: relative;
+		width: 100%;
+		height: 600px;
+		background: #FFF;
+		overflow: hidden;
+
+			@include respond-below(lg) {
+				height: 550px;
+			}
+
+			@include respond-below(md) {
+				height: 400px;
+			}
+
+			@include respond-below(sm) {
+				height: 480px;
+			}
+
+			@include respond-below(xs) {
+				height: 300px;
+			}
+
+		li {
+			display: none;
+		}
+
+		.current-slide {
+			display: block;
+		}
+
+		img {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.control-buttons {
+		margin-top: 15px;
+		text-align: center;
+
+		li {
+			cursor: pointer;
+			display: inline-block;
+			background: #DFE5E9;
+			text-indent: -99999px;
+			height: 12px;
+			width: 12px;
+			margin: 0 6px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+
+			&.active {
+				background: $primary-gradient;
+			}
+		}
+	}
+}
+
+
+
+

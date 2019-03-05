@@ -1,0 +1,23 @@
+// Careers
+
+.careers-include {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background: linear-gradient( to bottom, rgba(241,246,250, 0.9), rgba(241,246,250, 0.8) ),url(../assets/images/about/careers/whitespace-careers-banner-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@include respond-below(sm) {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+
+	.section-header-details {
+		margin-bottom: 0px;
+
+		p {
+			margin-bottom: 30px;
+		}
+	}
+
+}

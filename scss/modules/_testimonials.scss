@@ -1,0 +1,52 @@
+// Testimonials
+
+.testimonials {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+
+   @include respond-below(sm) {
+   padding-bottom: 20px;
+  }
+
+
+
+  @include respond-below(sm) {
+    font-size: 16px;
+    line-height: 24px;
+    flex-direction: column;
+  }
+
+  .testimonial {
+    background: $light-blue;
+    margin: 20px;
+    border-radius: 5px;
+
+    .content {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; 
+      padding: 40px;
+
+      img {
+           max-width: 180px;
+           margin-bottom: 30px;
+      }
+
+      p.title {
+        font-weight: $semi-bold;
+      }
+
+      p:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+

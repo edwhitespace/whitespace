@@ -1,0 +1,55 @@
+// Call to Action
+
+.call-to-action {
+	border-top: 1px solid $grey;
+	text-align: center;
+	background: $white;
+
+	.container {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		max-width: 1700px;
+		margin: 0 auto;
+		background: $white;
+		background-image: url(../assets/images/call-to-action/colinked-cta-corporate-icons.png), url(../assets/images/call-to-action/colinked-cta-founder-icons.png);
+		background-position: left, right;
+		background-repeat: no-repeat, no-repeat;
+		background-size: 377px 381px;
+
+		@include respond-below(md) {
+			padding-top: 90px;
+			padding-bottom: 90px;
+			background-size: 267px 270px;
+			background-position: left, right;
+		}
+
+		@include respond-below(sm) {
+			padding-top: 60px;
+			padding-bottom: 360px;
+			background-image: url(../assets/images/call-to-action/colinked-cta-all-icons.png);
+			background-position: bottom;
+			background-size: 683px 336px;
+		}
+
+	}
+	
+    .content {
+    	max-width: 504px;
+    	margin: 0 auto;
+    }
+
+}
+
+.contact-call-to-action{
+	text-align: center;
+	max-width: 550px;
+	margin: 0 auto;
+	clear: both;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	clear: both;
+
+	@include respond-below(sm) {
+		width: 90%;
+	}
+}
