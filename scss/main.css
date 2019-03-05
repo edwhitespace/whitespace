@@ -725,6 +725,10 @@ header {
       z-index: 9999999999;
       margin-top: 76px; }
 
+.scrollUp {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px); }
+
 th,
 td {
   padding: 12px 15px;
@@ -1494,13 +1498,19 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 .about-image-block {
   padding-bottom: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
           flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -1508,6 +1518,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     margin-top: 50px; }
   .about-image-block img {
     width: 100%; }
+  @media (max-width: 1219px) {
+    .about-image-block {
+      padding-bottom: 70px; } }
 
 .careers-image-block .right {
   margin-top: 0px; }
