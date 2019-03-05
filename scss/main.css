@@ -1483,7 +1483,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .testimonials .testimonial {
     background: #F1F6FA;
     margin: 20px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1; }
     .testimonials .testimonial .content {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;

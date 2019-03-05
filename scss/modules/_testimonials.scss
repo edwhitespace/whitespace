@@ -26,6 +26,9 @@
     background: $light-blue;
     margin: 20px;
     border-radius: 5px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
 
     .content {
       -webkit-box-sizing: border-box;
