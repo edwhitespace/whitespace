@@ -2,8 +2,6 @@
 
 .products {
 
-
-
 	.container {
 	    max-width: 1500px;
 		 display: flex;
@@ -21,6 +19,9 @@
 		font-size: 16px;
 		line-height: 24px;
 		flex: 0 0 50%;
+			-webkit-box-flex: 1;
+		-ms-flex: 1 1;
+		flex: 1 1;
 
 		img {
 			width: 100%;
