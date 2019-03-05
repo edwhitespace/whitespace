@@ -1501,9 +1501,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1;
-  flex: 1 1;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1511,8 +1508,15 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .about-image-block .left {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1; }
   .about-image-block .right {
-    margin-top: 50px; }
+    margin-top: 50px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1; }
   .about-image-block img {
     width: 100%; }
   @media (max-width: 1219px) {
