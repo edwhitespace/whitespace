@@ -2052,10 +2052,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             box-sizing: border-box;
     font-size: 16px;
     line-height: 24px;
-    flex: 0 0 50%;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1;
-    flex: 1 1; }
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
+    -ms-flex: 0 0 50%; }
     .products .container .product img {
       width: 100%;
       margin-bottom: 20px; }
