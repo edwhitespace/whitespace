@@ -2,16 +2,10 @@
 
 .about-image-block {
 	padding-bottom: 100px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flexbox;
-	display: -o-flex;
 	display: flex;
+	display: -ms-flexbox;
 
 	flex-direction: row;
-	-moz-flex-direction: row;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
 
 	align-items: center;
 
