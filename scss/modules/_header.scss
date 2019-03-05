@@ -172,9 +172,8 @@ header {
 	  text-align: center;
 
 		.overlay-content{
-		  position: relative;
-		  top: 20%;
-		  margin-top: 30px;
+			position: relative;
+			top: 17%;
 
 		  a {
 		  	display: block;
@@ -192,7 +191,9 @@ header {
 		}
 
 		&.overlay-show {
-		  opacity: 1;
+			opacity: 1;
+			z-index: 9999999999;
+			margin-top: 76px;
 		}
 
 	}
