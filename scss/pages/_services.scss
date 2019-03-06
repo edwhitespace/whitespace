@@ -328,6 +328,10 @@
 		@include respond-below(md) {
 			padding-bottom: 20px;
 		}
+
+		@include respond-below(sm) {
+	      flex: none;
+	    }
 	}
 
 	.prices {
@@ -345,6 +349,10 @@
 		width: 100%;
 		padding: 0px;
 	}
+
+	@include respond-below(sm) {
+      flex: none;
+    }
 		
 		.price {
 			background: $light-blue;
@@ -368,6 +376,7 @@
 
 			@include respond-below(sm) {
 				width: 80%;
+				flex: none;
 			}
 
 			@include respond-below(xs) {
