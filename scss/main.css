@@ -119,12 +119,23 @@ body {
   max-width: 1650px;
   margin: auto;
   position: relative;
-  padding: 0px 25px 0px 25px;
+  padding: 0px 85px 0px 85px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  @media (max-width: 1219px) {
+    .container {
+      padding: 0px 30px 0px 30px; } }
 
 :focus {
   outline: 0px !important; }
+
+::-moz-selection {
+  background: #1D71B8;
+  color: #FFFFFF; }
+
+::selection {
+  background: #1D71B8;
+  color: #FFFFFF; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -565,6 +576,55 @@ input.search {
     background-color: #E8EFF8;
     border: 1px solid #E8EFF8;
     outline: 0; }
+
+.alert {
+  height: 50px;
+  background: #F1F6FA;
+  color: #414042;
+  position: relative; }
+  .alert p {
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    max-width: 800px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .alert a {
+    color: #414042;
+    font-weight: 600;
+    border-bottom: none; }
+    .alert a:hover {
+      color: #1D71B8; }
+  .alert .closebtn {
+    margin-left: 15px;
+    color: #414042;
+    font-weight: bold;
+    float: right;
+    font-size: 25px;
+    line-height: 20px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .alert .closebtn:hover {
+      color: #1D71B8; }
 
 header {
   background: #FFFFFF;
@@ -1527,7 +1587,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 100%; }
   @media (max-width: 1219px) {
     .about-image-block {
-      padding-bottom: 70px; } }
+      padding-bottom: 0px; } }
 
 .careers-image-block .right {
   margin-top: 0px; }
@@ -1585,6 +1645,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       margin-bottom: 10px;
       -webkit-box-shadow: 0px 3px 6px #88888870;
               box-shadow: 0px 3px 6px #88888870; }
+      @media (max-width: 959px) {
+        .team-grid .member img {
+          max-width: 95px;
+          margin-bottom: 5px; } }
     .team-grid .member i {
       font-size: 22px; }
     .team-grid .member a {
@@ -1619,7 +1683,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 .company-locations {
   text-align: center;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  font-size: 16px;
+  line-height: 24px; }
   @media (max-width: 1219px) {
     .company-locations {
       padding-bottom: 50px; } }
@@ -1672,6 +1738,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   @media (max-width: 1219px) {
     .services-grid {
       max-width: 960px; } }
+  .services-grid .container {
+    padding: 0px 25px 0px 25px; }
   .services-grid .col {
     min-width: 570px;
     padding: 15px;
@@ -1926,9 +1994,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     top: 100px; }
     @media (max-width: 959px) {
       .page-header-centered img {
-        width: 100px;
-        height: 100px;
-        top: 50px; } }
+        width: 70px;
+        height: 70px;
+        top: 50px;
+        left: 20px; } }
   .page-header-centered span {
     font-weight: 400; }
   @media (max-width: 959px) {
@@ -1951,9 +2020,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     top: 60px; }
     @media (max-width: 959px) {
       .page-header-left img {
-        width: 100px;
-        height: 100px;
-        top: 50px; } }
+        width: 70px;
+        height: 70px;
+        top: 50px;
+        left: -20px; } }
   .page-header-left span {
     font-weight: 400; }
   @media (max-width: 959px) {
@@ -2017,7 +2087,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   @media (max-width: 959px) {
     .left-text {
       padding-top: 50px;
-      padding-bottom: 50px; } }
+      padding-bottom: 10px; } }
 
 .written-content {
   max-width: 860px;
