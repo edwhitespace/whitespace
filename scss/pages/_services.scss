@@ -322,6 +322,9 @@
 
 	.page-header-left {
 		width: 100%;
+		-ms-flex: 1 1;
+		flex: 1 1;
+
 		@include respond-below(md) {
 			padding-bottom: 20px;
 		}
@@ -334,6 +337,8 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 50px;
+	-ms-flex: 1 1;
+			flex: 1 1;
 
 	@include respond-below(md) {
 		flex-direction: column;

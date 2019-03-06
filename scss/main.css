@@ -2349,7 +2349,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           -ms-flex-direction: column;
               flex-direction: column; } }
   .pricing .page-header-left {
-    width: 100%; }
+    width: 100%;
+    -ms-flex: 1 1;
+    -webkit-box-flex: 1;
+            flex: 1 1; }
     @media (max-width: 1219px) {
       .pricing .page-header-left {
         padding-bottom: 20px; } }
@@ -2363,7 +2366,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 50px; }
+    padding: 50px;
+    -ms-flex: 1 1;
+    -webkit-box-flex: 1;
+            flex: 1 1; }
     @media (max-width: 1219px) {
       .pricing .prices {
         -webkit-box-orient: vertical;
