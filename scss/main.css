@@ -2232,7 +2232,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
         padding-right: 0px;
         -webkit-box-flex: 0;
             -ms-flex: none;
-                flex: none; } }
+                flex: none;
+        width: 100%; } }
     .service-details .left .content {
       max-width: 630px;
       padding-right: 50px;
