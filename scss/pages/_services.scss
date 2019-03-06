@@ -338,7 +338,7 @@
 	box-sizing: border-box;
 	padding: 50px;
 	-ms-flex: 1 1;
-			flex: 1 1;
+	flex: 1 1;
 
 	@include respond-below(md) {
 		flex-direction: column;
