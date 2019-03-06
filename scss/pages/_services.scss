@@ -156,6 +156,7 @@
 		@include respond-below(sm) {
 			flex-direction: column-reverse;
 			padding: 0px 20px 0px 20px;
+			
 		}
 	}
 	
@@ -165,6 +166,7 @@
 
 		 @include respond-below(sm) {
 			padding-right: 0px;
+			flex: none;
 		}
 		
 		.content {
@@ -184,10 +186,6 @@
 
 		}
 
-		@include respond-below(sm) {
-			flex: none;
-			 width: 100%;
-		}
 	}
 
 	.right {
@@ -197,7 +195,8 @@
 		margin-right: -35px;
 
 		@include respond-below(sm) {
-			margin-right: 00px;
+			margin-right: 0px;
+			flex: none;
 		}
 
 		img {
