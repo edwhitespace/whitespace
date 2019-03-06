@@ -21,6 +21,10 @@
 		flex: 0 0 50%;
 		-ms-flex:  0 0 44%;
 
+		p {
+			font-weight: $regular;
+		}
+
 		img {
 			width: 100%;
 			margin-bottom: 20px;

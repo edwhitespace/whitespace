@@ -4,9 +4,7 @@
 	padding-bottom: 100px;
 	display: flex;
 	display: -ms-flexbox;
-
 	flex-direction: row;
-
 	align-items: center;
 
 	.left {
@@ -30,7 +28,6 @@
 		padding-bottom: 0px;
 	}
 
-	
 }
 
 .careers-image-block {
@@ -77,12 +74,14 @@
 			 p {
 			 	font-size: 16px;
 			 	line-height: 24px;
+			 	font-weight: $regular;
 			 }
 
 			 li {
 			 	list-style: none;
 			 	font-size: 16px;
 			 	margin-left: 0px;
+			 	font-weight: $regular;
 			 }
 
 			img {
@@ -179,6 +178,14 @@
 	font-size: 16px;
 	line-height: 24px;
 
+	a {
+	  font-weight: $regular;
+	}
+
+	p {
+	  font-weight: $regular;
+	}
+
 	@include respond-below(md) {
 		padding-bottom: 50px;
 	}
@@ -192,6 +199,7 @@
 			max-width: 300px;
 			}
 		}
+
 		display: inline-block;
 		vertical-align: top;
 		padding: 40px;

@@ -8,6 +8,10 @@
 	max-width: 1220px;
 	margin: 0 auto;
 
+	p {
+		 font-weight: $regular;
+	}
+
 	@include respond-below(md) {
 		max-width: 960px;
 	}
