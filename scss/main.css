@@ -305,7 +305,7 @@ ol {
           box-shadow: 0px 1px 20px #88888861; }
   #back-to-top-button::after {
     content: "\f077";
-    font-family: Font Awesome 5 Free;
+    font-family: "Font Awesome 5 Free";
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
