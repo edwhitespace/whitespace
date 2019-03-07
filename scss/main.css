@@ -1534,7 +1534,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       padding-top: 50px;
       padding-bottom: 50px; } }
   .partners .logos {
-    font-size: 0; }
+    font-size: 0;
+    max-width: 1300px;
+    margin: 0 auto; }
     .partners .logos img {
       display: inline-block;
       vertical-align: top;
