@@ -1533,15 +1533,17 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .partners {
       padding-top: 50px;
       padding-bottom: 50px; } }
-  .partners .logos img {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-bottom: 60px; }
-    @media (max-width: 699px) {
-      .partners .logos img {
-        width: 49%;
-        margin-bottom: 30px; } }
+  .partners .logos {
+    font-size: 0; }
+    .partners .logos img {
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+      margin-bottom: 60px; }
+      @media (max-width: 699px) {
+        .partners .logos img {
+          width: 50%;
+          margin-bottom: 30px; } }
 
 .careers-include {
   padding-top: 150px;
