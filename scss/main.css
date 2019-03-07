@@ -286,6 +286,44 @@ ol {
     background-position: 100px;
     color: #FFFFFF; }
 
+#back-to-top-button {
+  display: inline-block;
+  background-color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  -webkit-box-shadow: 0px 1px 20px #88888861;
+          box-shadow: 0px 1px 20px #88888861; }
+  #back-to-top-button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 48px;
+    color: #1D71B8; }
+  #back-to-top-button:hover {
+    cursor: pointer;
+    background-color: #1D71B8; }
+    #back-to-top-button:hover::after {
+      color: #FFFFFF; }
+  #back-to-top-button:active {
+    background-color: #1D71B8; }
+    #back-to-top-button:active::after {
+      color: #FFFFFF; }
+  #back-to-top-button.show {
+    opacity: 1;
+    visibility: visible; }
+
 .call-to-action {
   border-top: 1px solid #6A7177;
   text-align: center;
@@ -1499,10 +1537,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     display: inline-block;
     vertical-align: top;
     width: 20%;
-    margin-bottom: 40px; }
+    margin-bottom: 60px; }
     @media (max-width: 699px) {
       .partners .logos img {
-        width: 49%; } }
+        width: 49%;
+        margin-bottom: 30px; } }
 
 .careers-include {
   padding-top: 150px;
@@ -2530,57 +2569,50 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .investready .pricing .prices .price p.cost {
     text-transform: uppercase; }
 
-.bulletins {
-  background: #F1F6FA;
-  margin-top: 150px;
-  margin-bottom: 150px;
-  padding-top: 120px;
-  padding-bottom: 140px; }
+.corp-club .curve {
+  margin-top: 50px; }
+
+.bulletins h2 {
+  margin-bottom: 30px; }
   @media (max-width: 1219px) {
-    .bulletins {
-      margin-top: 60px;
-      margin-bottom: 60px;
-      padding-top: 60px;
-      padding-bottom: 80px; } }
-  .bulletins h2 {
-    margin-bottom: 30px; }
-    @media (max-width: 1219px) {
-      .bulletins h2 {
-        margin-bottom: 20px; } }
-  .bulletins .bulletin {
-    border-bottom: 1px solid #e2e2e2;
-    padding-top: 30px;
-    padding-bottom: 30px; }
-    .bulletins .bulletin .title {
-      width: 70%;
-      vertical-align: middle;
-      display: inline-block; }
+    .bulletins h2 {
+      margin-bottom: 20px; } }
+.bulletins .bulletin {
+  border-bottom: 1px solid #e2e2e2;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .bulletins .bulletin .title {
+    width: 70%;
+    vertical-align: middle;
+    display: inline-block; }
+    @media (max-width: 959px) {
+      .bulletins .bulletin .title {
+        width: 100%;
+        display: block; } }
+    .bulletins .bulletin .title h3 {
+      margin-bottom: 0px;
+      font-size: 22px;
+      font-weight: 300; }
       @media (max-width: 959px) {
-        .bulletins .bulletin .title {
-          width: 100%;
-          display: block; } }
-      .bulletins .bulletin .title h3 {
-        margin-bottom: 0px;
-        font-size: 22px;
-        font-weight: 300; }
-        @media (max-width: 959px) {
-          .bulletins .bulletin .title h3 {
-            width: 100%;
-            display: block;
-            text-align: left;
-            margin-bottom: 15px; } }
-        .bulletins .bulletin .title h3 a {
-          border-bottom: none;
-          color: #414042; }
-          .bulletins .bulletin .title h3 a:hover {
-            color: #1D71B8; }
-    .bulletins .bulletin .download {
-      width: 29%;
-      vertical-align: middle;
-      display: inline-block;
-      text-align: right; }
-      @media (max-width: 959px) {
-        .bulletins .bulletin .download {
+        .bulletins .bulletin .title h3 {
           width: 100%;
           display: block;
-          text-align: left; } }
+          text-align: left;
+          margin-bottom: 15px;
+          font-size: 18px;
+          line-height: 28px; } }
+      .bulletins .bulletin .title h3 a {
+        border-bottom: none;
+        color: #414042; }
+        .bulletins .bulletin .title h3 a:hover {
+          color: #1D71B8; }
+  .bulletins .bulletin .download {
+    width: 29%;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: right; }
+    @media (max-width: 959px) {
+      .bulletins .bulletin .download {
+        width: 100%;
+        display: block;
+        text-align: left; } }

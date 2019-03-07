@@ -424,19 +424,13 @@
 
 // Corporate Innovation Club Page
 
-.bulletins {
-	background: $light-blue;
-	margin-top: 150px;
-	margin-bottom: 150px;
-	padding-top: 120px;
-	padding-bottom: 140px;
-
-	@include respond-below(md) {
-		margin-top: 60px;
-		margin-bottom: 60px;
-		padding-top: 60px;
-		padding-bottom: 80px;
+.corp-club {
+	.curve {
+		margin-top: 50px;
 	}
+}
+
+.bulletins {
 
 	h2 {
 		margin-bottom: 30px;
@@ -471,6 +465,8 @@
 					display: block;
 					text-align: left;
 					margin-bottom: 15px;
+					font-size: 18px;
+					line-height: 28px;
 				}
 
 				a {
