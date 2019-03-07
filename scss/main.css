@@ -1859,10 +1859,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       .services-grid .left {
         float: none; } }
     .services-grid .left a.service {
-      height: 680px; }
+      height: 679px; }
       @media (max-width: 959px) {
         .services-grid .left a.service {
-          height: 400px; } }
+          height: 399px; } }
       .services-grid .left a.service .content {
         bottom: -154px; }
       .services-grid .left a.service.discovery-day {
